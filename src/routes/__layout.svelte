@@ -1,6 +1,6 @@
 <script lang="ts">
   import '../app.css';
-  import Navbar from '$lib/Navbar/Navbar.svelte';
+  import Navbar from '$lib/Navbar/index.svelte';
 </script>
 
 <Navbar />

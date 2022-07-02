@@ -1,6 +1,14 @@
 <script lang="ts">
-  export let show: boolean;
-  export let toggle: () => void;
+  import { spring } from 'svelte/motion';
+
+  let show = false;
+
+  const displayed_show = spring();
+  $: displayed_show.set(show);
+
+  const toggle = () => {
+    show = !show;
+  };
 </script>
 
 <div class="ml-3 relative">
